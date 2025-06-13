@@ -14,7 +14,7 @@
 <body style="background-color:#7577b1ba;">
 <nav class="navbar shaded-navbar navbar-expand-lg">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#" style="color:white">PARACHUT</a>
+        <a class="navbar-brand" href="#" style="color:white">PARACHUTE</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -30,7 +30,7 @@
     <BR>
     <form action="submit" method="post">
      <div>
-         <label for="parachutType">Parachut Type:</label>
+         <label for="parachutType">Parachute Type:</label>
          <div  class="d-flex justify-content-center">
          <select id="parachutType" name="parachutType" style="width: 500px;" class="form-control" placeholder="Parachut Type" id="exampleInputEmail1" >
              <option value="" disabled selected>Select the Type</option>

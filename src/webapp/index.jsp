@@ -33,7 +33,7 @@ margin-top:300px
 <body style="background-image:url(P1.jpg)">
 
 
-<h1 class="para1" align="center" style="color:white">Explore Sky with Parachut</h1>
+<h1 class="para1" align="center" style="color:white">Explore the Sky with Parachute!!!</h1>
 <button type="button" class="button"><a href="parachut.jsp" style=" text-decoration: none;color:white">Click</a></button>
 <div></div>
 </body>
