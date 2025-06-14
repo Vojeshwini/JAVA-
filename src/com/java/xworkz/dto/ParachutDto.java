@@ -1,14 +1,12 @@
 package com.java.xworkz.dto;
 
 public class ParachutDto {
-private String parachutType;
-private boolean n_reusable;
-private String deploymentType;
-private String manufacturedBy;
-private int n_capacity;
-private int n_cost;
-
-
+    private String parachutType;
+    private boolean n_reusable;
+    private String deploymentType;
+    private String manufacturedBy;
+    private long n_capacity;
+    private long n_cost;
 
 
 //by default all the getter and setter will be set
@@ -16,7 +14,8 @@ private int n_cost;
     public void setParachutType(String parachutType) {
         this.parachutType = parachutType;
     }
-//
+
+    //
     public void setN_reusable(boolean n_reusable) {
         this.n_reusable = n_reusable;
     }
@@ -41,11 +40,11 @@ private int n_cost;
         return parachutType;
     }
 
-    public int getN_capacity() {
+    public long getN_capacity() {
         return n_capacity;
     }
 
-    public int getN_cost() {
+    public long getN_cost() {
         return n_cost;
     }
 
@@ -56,11 +55,11 @@ private int n_cost;
     public String getManufacturedBy() {
         return manufacturedBy;
     }
-//
+
+    //
     public boolean isN_reusable() {
         return n_reusable;
     }
-
 
     @Override
     public String toString() {
@@ -74,3 +73,6 @@ private int n_cost;
                 '}';
     }
 }
+
+
+
