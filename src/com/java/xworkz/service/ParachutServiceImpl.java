@@ -17,8 +17,8 @@ public ParachutServiceImpl(){
     boolean n_resuable= parachutDto.isN_reusable();
     String deploymentType=parachutDto.getDeploymentType();
     String manufacturedBy=parachutDto.getManufacturedBy();
-    int n_capacity=parachutDto.getN_capacity();
-    int n_cost=parachutDto.getN_cost();
+    long n_capacity=parachutDto.getN_capacity();
+    long n_cost=parachutDto.getN_cost();
 
     if(parachutType!=null){
         System.out.println("valid");
