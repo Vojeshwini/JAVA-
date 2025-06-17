@@ -24,7 +24,7 @@
 
     }
     .para1{
-margin-top:300px
+margin-top:300px;
     }
 
 
