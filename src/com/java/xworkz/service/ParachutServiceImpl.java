@@ -4,6 +4,8 @@ import com.java.xworkz.dto.ParachutDto;
 import com.java.xworkz.repository.ParachutRepo;
 import com.java.xworkz.repository.ParachutRepoImpl;
 
+import java.util.Optional;
+
 public class ParachutServiceImpl implements ParachutService {
 public ParachutServiceImpl(){
     System.out.println("running no arg constrictor in parachutServiceImpl");
@@ -24,6 +26,7 @@ public ParachutServiceImpl(){
         System.out.println("valid");
     }else {
         System.out.println("invalid");
+
         return false;
     }
     if(n_resuable!=false){
@@ -63,5 +66,20 @@ public ParachutServiceImpl(){
         }
 
         return false;
+    }
+
+
+    @Override
+    public Optional<ParachutDto> findById(int n_id) {
+
+        System.out.println("running the find if in duster servlet");
+        if(n_id >0){
+            System.out.println("id is valid:"+n_id);
+            ParachutRepo parachutRepo=new ParachutRepoImpl();//call the repo
+            return parachutRepo.findById(n_id);
+        }
+
+
+        return ParachutService.super.findById(n_id);
     }
 }

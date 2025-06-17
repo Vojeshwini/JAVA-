@@ -5,13 +5,11 @@
     <title>Title</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-
-<style>
-    .shaded-navbar {
- background: linear-gradient(to bottom, #66b2ff, #000000); /* light blue to black */
+    <style>
+        .shaded-navbar {
+  background: linear-gradient(to bottom, #66b2ff, #000000); /* light blue to black */
 }
-</style>
-
+    </style>
 </head>
 <body style="background-color:#7577b1ba;">
 <nav class="navbar shaded-navbar navbar-expand-lg">
@@ -29,21 +27,19 @@
         </div>
     </div>
 </nav>
-<div>
-    <h1>Details</h1>
-    <h1>Parachut report</h1>
-    <h2>${message}</h2>
-    <p><strong>Parachut Type:</strong>${parachutDto.parachutType}</p>
-    <p><strong>Is Reusable:</strong>${parachutDto.n_reusable}</p>
-    <p><strong>Deployment Type:</strong>${parachutDto.deploymentType}</p>
-    <p><strong>Manufactured by:</strong>${parachutDto.manufacturedBy}</p>
-    <p><strong>Capacity:</strong>${parachutDto.n_capacity}</p>
-    <p><strong>Cost:</strong>${parachutDto.n_cost}</p>
+<form action="search" method="post">
+    <div align="center">
+        <div class="mb-3">
+            <label for="exampleInputEmail11" class="form-label">Search Parachut </label>
+            <div class="d-flex justify-content-center">
+                <input type="text" placeholder="Enter ID" class="form-control" id="exampleInputEmail11" style="width: 500px;" name="id">
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
 
 
-</div>
-
-
+</form>
 
 </body>
 </html>

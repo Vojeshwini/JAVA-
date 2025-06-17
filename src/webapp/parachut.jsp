@@ -26,13 +26,20 @@
     </div>
 </nav>
 <div align="center">
+    <h1 style="color:Green">${success}</h1>
+    <h1 style="coor:red">${Notsuccess}</h1>
+
+</div>
+
+
+<div align="center">
     <h1>FILL THE INFORMATION!!!</h1>
     <BR>
     <form action="submit" method="post">
      <div>
          <label for="parachutType">Parachute Type:</label>
          <div  class="d-flex justify-content-center">
-         <select id="parachutType" name="parachutType" style="width: 500px;" class="form-control" placeholder="Parachut Type" id="exampleInputEmail1" >
+         <select id="parachutType" name="parachutType" style="width: 500px;" class="form-control" placeholder="Parachut Type" id="exampleInputEmail1" value="${dto.parachutType}">
              <option value="" disabled selected>Select the Type</option>
              <option value="Round">Round</option>
              <option value="Cruciform">Cruciform </option>
@@ -47,7 +54,7 @@
         <div>
             <label for="parachutType">Reusable:</label>
             <div  class="d-flex justify-content-center">
-                <select id="reusable" name="reusable" style="width: 500px;" class="form-control" placeholder="Parachut Type" id="exampleInputEmail3" >
+                <select id="reusable" name="reusable" style="width: 500px;" class="form-control"  id="exampleInputEmail3" value="${dto.n_reusable}" >
                     <option value="" disabled selected>Select </option>
                     <option value="True">Yes</option>
                     <option value="false">No </option>
@@ -60,27 +67,29 @@
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Deployment Type</label>
             <div class="d-flex justify-content-center">
-                <input type="text" placeholder="Deployment Type" class="form-control" id="exampleInputEmail4" style="width: 500px;" name="deploymentType">
+                <input type="text" placeholder="Deployment Type" class="form-control" id="exampleInputEmail4" style="width: 500px;" name="deploymentType" value="${dto.deploymentType}">
             </div>
         </div>
 
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Manufactured By</label>
             <div class="d-flex justify-content-center">
-                <input type="text" placeholder="Company" class="form-control" id="exampleInputEmail5" style="width: 500px;" name="manufacturedBy">
+                <input type="text" placeholder="Company" class="form-control" id="exampleInputEmail5" style="width: 500px;" name="manufacturedBy" value="${dto.manufacturedBy}">
             </div>
         </div>
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Capacity</label>
             <div class="d-flex justify-content-center">
-                <input type="number" placeholder="Max weight it carry in KG" class="form-control" id="exampleInputEmail7" style="width: 500px;" name="capacity">
+                <input type="number" placeholder="Max weight it carry in KG" class="form-control" id="exampleInputEmail7" style="width: 500px;" name="capacity" value="${dto.n_capacity}">
             </div>
         </div>
 
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Cost</label>
             <div class="d-flex justify-content-center">
-                <input type="number" placeholder="Cost" class="form-control" id="exampleInputEmail6" style="width: 500px;" name="cost">
+
+<!--                //here in this value is to retain the value if the value is not valid-->
+                <input type="number" placeholder="Cost" class="form-control" id="exampleInputEmail6" style="width: 500px;" name="cost" value="${dto.n_cost}">
             </div>
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>

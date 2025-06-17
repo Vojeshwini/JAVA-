@@ -34,7 +34,7 @@ margin-top:300px
 
 
 <h1 class="para1" align="center" style="color:white">Explore the Sky with Parachute!!!</h1>
-<button type="button" class="button"><a href="parachut.jsp" style=" text-decoration: none;color:white;">Fill Form</a></button>
+<button type="button" class="button"><a href="parachut.jsp" style=" text-decoration: none;color:white">Fill Form</a></button>
 <button type="button" class="button"><a href="ParachutSearch.jsp" style=" text-decoration: none;color:white">Search</a></button>
 
 <div></div>

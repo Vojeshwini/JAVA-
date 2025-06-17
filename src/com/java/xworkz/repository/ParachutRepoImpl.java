@@ -6,6 +6,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.Optional;
 
 public class ParachutRepoImpl implements ParachutRepo {
     public boolean persist(ParachutDto parachutDto) {
@@ -32,5 +33,11 @@ public class ParachutRepoImpl implements ParachutRepo {
             return true;
         }
         return false;
+    }
+
+    @Override
+    public Optional<ParachutDto> findById(int n_id) {
+        System.out.println("running the findById in ParachutrepoImpl");
+        return ParachutRepo.super.findById(n_id);
     }
 }
