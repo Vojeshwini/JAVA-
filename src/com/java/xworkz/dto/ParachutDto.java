@@ -1,5 +1,10 @@
 package com.java.xworkz.dto;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
+@Data
+@AllArgsConstructor
 public class ParachutDto {
     private String parachutType;
     private boolean n_reusable;
@@ -11,6 +16,7 @@ public class ParachutDto {
 
 //by default all the getter and setter will be set
 
+//
     public void setParachutType(String parachutType) {
         this.parachutType = parachutType;
     }
@@ -28,11 +34,11 @@ public class ParachutDto {
         this.manufacturedBy = manufacturedBy;
     }
 
-    public void setN_capacity(int n_capacity) {
+    public void setN_capacity(long n_capacity) {
         this.n_capacity = n_capacity;
     }
 
-    public void setN_cost(int n_cost) {
+    public void setN_cost(long n_cost) {
         this.n_cost = n_cost;
     }
 
