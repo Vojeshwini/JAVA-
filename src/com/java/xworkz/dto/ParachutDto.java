@@ -1,9 +1,13 @@
 package com.java.xworkz.dto;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
+import lombok.*;
 
-@Data
+import java.sql.Timestamp;
+import java.time.LocalDateTime;
+
+@Getter
+@Setter
+@ToString
 @AllArgsConstructor
 public class ParachutDto {
     private String parachutType;
@@ -12,72 +16,13 @@ public class ParachutDto {
     private String manufacturedBy;
     private long n_capacity;
     private long n_cost;
+//    private String created_by=LoginConstant.SYSTEM.toString();
+//    private Timestamp created_time=Timestamp.valueOf(LocalDateTime);
 
 
-//by default all the getter and setter will be set
+//    public ParachutDto(String parachutType, boolean nReusable, String deploymentType, String manufacturedBy, long nCapacity, long nCost) {
+//    }
 
-//
-    public void setParachutType(String parachutType) {
-        this.parachutType = parachutType;
-    }
-
-    //
-    public void setN_reusable(boolean n_reusable) {
-        this.n_reusable = n_reusable;
-    }
-
-    public void setDeploymentType(String deploymentType) {
-        this.deploymentType = deploymentType;
-    }
-
-    public void setManufacturedBy(String manufacturedBy) {
-        this.manufacturedBy = manufacturedBy;
-    }
-
-    public void setN_capacity(long n_capacity) {
-        this.n_capacity = n_capacity;
-    }
-
-    public void setN_cost(long n_cost) {
-        this.n_cost = n_cost;
-    }
-
-    public String getParachutType() {
-        return parachutType;
-    }
-
-    public long getN_capacity() {
-        return n_capacity;
-    }
-
-    public long getN_cost() {
-        return n_cost;
-    }
-
-    public String getDeploymentType() {
-        return deploymentType;
-    }
-
-    public String getManufacturedBy() {
-        return manufacturedBy;
-    }
-
-    //
-    public boolean isN_reusable() {
-        return n_reusable;
-    }
-
-    @Override
-    public String toString() {
-        return "ParachutDto{" +
-                "parachutType='" + parachutType + '\'' +
-                ", n_reusable=" + n_reusable +
-                ", deploymentType='" + deploymentType + '\'' +
-                ", manufacturedBy='" + manufacturedBy + '\'' +
-                ", n_capacity=" + n_capacity +
-                ", n_cost=" + n_cost +
-                '}';
-    }
 }
 
 
